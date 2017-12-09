@@ -1,13 +1,9 @@
 import os
 import pandas as pd
-from tsfresh import extract_features
-from tsfresh.utilities.dataframe_functions import impute
 import matplotlib.pyplot as plt
 import time
 import numpy as np
-import random
 from scipy.spatial.distance import euclidean
-from scipy.spatial import distance
 from fastdtw import fastdtw
 from sklearn.preprocessing import scale
 from sklearn.metrics.pairwise import euclidean_distances
@@ -28,29 +24,6 @@ start, end = 0, 600
 
 AllFiles = [files_ECG, files_ART, files_CO2, files_PAP]
 
-### Sample Plot
-#
-Sample_ART = pd.read_table(path + "/" + files_ART[1], header=None)
-plt.plot(Sample_ART[start:end])
-
-Sample_ECG = pd.read_table(path + "/" + files_ECG[5], header=None)
-plt.plot(Sample_ECG[start:end])
-# plt.savefig("C:\Users\pewu\Desktop\SampleTSPlot\ECG.jpg",dpi=900)
-# #
-# #
-# Sample_CO2 = pd.read_table(path + "\\" + files_CO2[5], header=None)
-# plt.plot(Sample_CO2[start:end])
-# # plt.savefig("C:\Users\pewu\Desktop\SampleTSPlot\CO2.jpg",dpi=900)
-# #
-# #
-# Sample_CVP = pd.read_table(path + "\\" + files_CVP[5], header=None)
-# plt.plot(Sample_CVP[start:end])
-# # plt.savefig("C:\Users\pewu\Desktop\SampleTSPlot\CVP.jpg",dpi=900)
-# #
-# Sample_PAP = pd.read_table(path + "\\" + files_PAP[3], header=None)
-# plt.plot(Sample_PAP[start:end])
-# # plt.savefig("C:\Users\pewu\Desktop\SampleTSPlot\PAP.jpg",dpi=900)
-# #
 size = 20
 AllTS = []
 for thefiles in AllFiles:
@@ -82,9 +55,6 @@ print(time.time()-start)
 dist_mat2_pd = pd.DataFrame(dist_mat2)
 dist_mat2_pd.to_csv('Output/dist_dtw_temp.csv',header=None,index=None)
 
-
-dist_mat_scale = dist_mat/np.max(dist_mat)
-dist_mat2_scale = dist_mat/np.max(dist_mat2)
 ### Visualization
 def distance_matrix(df,metric):
     from matplotlib import pyplot as plt
