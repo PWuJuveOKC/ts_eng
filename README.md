@@ -6,3 +6,6 @@ Calculate similarity for 4 types of medical data (ECG/PAP/ART/CO2) using Euclide
 
 ## Sample_Extract.py
 Use same sample data as in similarity.py and extracted features using tsfresh. Times series are scaled before feature extraction.
+
+## TSHeatmap.R
+Display features extracted from sample medical data, 4 groups denote 4 types in rowside 
