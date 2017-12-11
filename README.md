@@ -1,7 +1,7 @@
 # README
 Code for time series feature engineering project
 
-##Illustration Folder
+## Illustration Folder
 
 ### Similarity.py
 Calculate similarity for 4 types of medical data (ECG/PAP/ART/CO2) using Euclidean and FastDTW distance, each type has 20 samples. Plots outputted to Output folder. Time series data length is restricted to 600.
