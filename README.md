@@ -1,4 +1,4 @@
-# ReadMe
+# README
 Code for time series feature engineering project
 
 ## Similarity.py
@@ -8,4 +8,4 @@ Calculate similarity for 4 types of medical data (ECG/PAP/ART/CO2) using Euclide
 Use same sample data as in similarity.py and extracted features using tsfresh. Times series are scaled before feature extraction.
 
 ## TSHeatmap.R
-Display features extracted from sample medical data, 4 groups denote 4 types in rowside 
+Display features extracted from sample medical data, 4 groups denote 4 types in rowside, output to heatmap_sample.pdf in Output folder. 
