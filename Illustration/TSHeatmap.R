@@ -1,7 +1,7 @@
 rm(list=ls())
 library("gplots")
 library(RColorBrewer)
-df <- read.csv('Data/sampleTS_Med_feature_norm.csv',header=TRUE)
+df <- read.csv('../Data/sampleTS_Med_feature_norm.csv',header=TRUE)
 #rownames(df) <- df$name
 size = 20
 rownames(df) <- c(paste(rep("ECG",size),seq(1,size)),paste(rep("ART",size),seq(1,size)),
@@ -13,7 +13,7 @@ colnames(df) = substring(features,8,100)
 
 
 #my_palette <- colorRampPalette(c("red","black","green"))(100)
-pdf("Output/heatmap_sample.pdf", width=12, height=9)
+pdf("../Output/heatmap_sample.pdf", width=12, height=9)
 heatmap.2(as.matrix(df),  Rowv=F,Colv=T, dendrogram ='none', trace='none',
           density.info="none",key=TRUE,keysize=0.6,offsetCol=0.2,
           margins=c(12,10),cexRow=1,cexCol=0.5,

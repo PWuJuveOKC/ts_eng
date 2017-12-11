@@ -9,8 +9,8 @@ from sklearn.preprocessing import scale
 from sklearn.metrics.pairwise import euclidean_distances
 import seaborn as sns; sns.set()
 
-files = os.listdir("Data/All_time_series_website/Web_Time_Series_Files_7")
-path = "Data/All_time_series_website/Web_Time_Series_Files_7"
+files = os.listdir("../Data/All_time_series_website/Web_Time_Series_Files_7")
+path = "../Data/All_time_series_website/Web_Time_Series_Files_7"
 
 files_ECG = [f for f in files if 'ECG' in f] #456
 files_ART = [f for f in files if 'ART' in f] #132
@@ -53,7 +53,7 @@ print(time.time()-start)
 #
 
 dist_mat2_pd = pd.DataFrame(dist_mat2)
-dist_mat2_pd.to_csv('Output/dist_dtw_temp.csv',header=None,index=None)
+dist_mat2_pd.to_csv('../Output/dist_dtw_temp.csv',header=None,index=None)
 
 ### Visualization
 def distance_matrix(df,metric):
@@ -75,6 +75,6 @@ def distance_matrix(df,metric):
     plt.show()
 
 distance_matrix(dist_mat, 'Euclidean')
-plt.savefig("Output/dist_EU.jpg",dpi=900)
+plt.savefig("../Output/dist_EU.jpg",dpi=900)
 distance_matrix(dist_mat2, 'DTW')
-plt.savefig("Output/dist_DTW.jpg",dpi=900)
+plt.savefig("../Output/dist_DTW.jpg",dpi=900)
