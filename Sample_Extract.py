@@ -48,7 +48,24 @@ for myfiles in AllFiles:
 
 Alldat = pd.concat(AllFrames)
 Alldat['name'] = ts_names
-
-
 Alldat['Label'] = [0] * size + [1] * size + [2] * size + [3] * size
+
 Alldat.to_csv('Data/sampleTS_Med_feature.csv',index=None)
+
+
+### Drop columns with all same value and scale the features
+def DropSame(df0):
+    df = df0.copy();
+    for col in df.columns:
+        if len(df[col].unique()) == 1:
+            df.drop(col, inplace=True, axis=1)
+    return df
+
+Alldat2 = DropSame(Alldat)
+norm_features = scale(Alldat2.iloc[:,:-2])
+norm_features = pd.DataFrame(norm_features)
+norm_features.columns = list(Alldat2)[:-2]
+norm_features['name'] = ts_names
+norm_features['Label'] = [0] * size + [1] * size + [2] * size + [3] * size
+
+norm_features.to_csv('Data/sampleTS_Med_feature_norm.csv',index=None)
