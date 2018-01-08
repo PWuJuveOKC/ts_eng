@@ -1,2 +1,6 @@
+# Directory
 All_time_series_website/
 Documents/
+
+# Mac OS temp files
+.DS_Store
