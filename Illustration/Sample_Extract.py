@@ -8,8 +8,8 @@ import random
 from sklearn.preprocessing import scale
 from sklearn.preprocessing import normalize
 
-files = os.listdir("../Data/All_time_series_website/Web_Time_Series_Files_7")
-path = "../Data/All_time_series_website/Web_Time_Series_Files_7"
+files = os.listdir("Data/All_time_series_website/Web_Time_Series_Files_7")
+path = "Data/All_time_series_website/Web_Time_Series_Files_7"
 
 files_ECG = [f for f in files if 'ECG' in f] #456
 files_ART = [f for f in files if 'ART' in f] #132
@@ -50,7 +50,7 @@ Alldat = pd.concat(AllFrames)
 Alldat['name'] = ts_names
 Alldat['Label'] = [0] * size + [1] * size + [2] * size + [3] * size
 
-Alldat.to_csv('../Data/sampleTS_Med_feature.csv',index=None)
+Alldat.to_csv('Data/sampleTS_Med_feature.csv',index=None)
 
 
 ### Drop columns with all same value and scale the features
@@ -68,4 +68,4 @@ norm_features.columns = list(Alldat2)[:-2]
 norm_features['name'] = ts_names
 norm_features['Label'] = [0] * size + [1] * size + [2] * size + [3] * size
 
-norm_features.to_csv('../Data/sampleTS_Med_feature_norm.csv',index=None)
+norm_features.to_csv('Data/sampleTS_Med_feature_norm.csv',index=None)

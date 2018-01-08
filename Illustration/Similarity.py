@@ -39,22 +39,23 @@ def FastDTW(x,y):
     distanceDTW, mypath = fastdtw(x, y, dist=euclidean)
     return distanceDTW
 
-
-dist_mat2 = np.zeros((size*4, size*4))
-start = time.time()
-for i in xrange(size*4):
-    for j in xrange(size*4):
-        lati= AllTS[i]
-        latj =AllTS[j]
-        dist_mat2[i, j] = FastDTW(lati,latj)
-        dist_mat2[j, i] = dist_mat2[i, j]
-print(time.time()-start)
+#
+# dist_mat2 = np.zeros((size*4, size*4))
+# start = time.time()
+# for i in xrange(size*4):
+#     for j in xrange(size*4):
+#         lati= AllTS[i]
+#         latj =AllTS[j]
+#         dist_mat2[i, j] = FastDTW(lati,latj)
+#         dist_mat2[j, i] = dist_mat2[i, j]
+# print(time.time()-start)
+# #
+# #
+#
+# dist_mat2_pd = pd.DataFrame(dist_mat2)
+# dist_mat2_pd.to_csv('../Output/dist_dtw_temp.csv',header=None,index=None)
 #
 #
-
-dist_mat2_pd = pd.DataFrame(dist_mat2)
-dist_mat2_pd.to_csv('../Output/dist_dtw_temp.csv',header=None,index=None)
-
 ### Visualization
 def distance_matrix(df,metric):
     from matplotlib import pyplot as plt
@@ -62,7 +63,7 @@ def distance_matrix(df,metric):
 
     fig = plt.figure()
     ax1 = fig.add_subplot(111)
-    cmap = cm.get_cmap('hot', 30)
+    cmap = cm.get_cmap('rainbow', 30)
     cax = ax1.imshow(df, interpolation="nearest", cmap=cmap)
     ax1.grid(False)
     #plt.title(metric+' Metric')
@@ -76,5 +77,5 @@ def distance_matrix(df,metric):
 
 distance_matrix(dist_mat, 'Euclidean')
 plt.savefig("../Output/dist_EU.jpg",dpi=900)
-distance_matrix(dist_mat2, 'DTW')
-plt.savefig("../Output/dist_DTW.jpg",dpi=900)
+# distance_matrix(dist_mat2, 'DTW')
+# plt.savefig("../Output/dist_DTW.jpg",dpi=900)
