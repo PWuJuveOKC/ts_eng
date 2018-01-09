@@ -31,6 +31,7 @@ for thefiles in AllFiles:
 
 ## Euclidean
 dist_mat = euclidean_distances(AllTS,AllTS)
+
 ## Fast DTW
 def FastDTW(x,y):
     distanceDTW, mypath = fastdtw(x, y, dist=euclidean)
@@ -64,7 +65,7 @@ def distance_matrix(df,metric):
     cax = ax1.imshow(df, interpolation="nearest", cmap=cmap)
     ax1.grid(False)
     #plt.title(metric+' Metric')
-    labels=['ECG', 'ART', 'CO2', 'PAP']
+    labels=['Temperature', 'Precipitation', 'Humidity', 'Pressure']
     ax1.set_xticklabels(labels,fontsize=10)
     ax1.set_xticks(np.arange(size*0.5,size*4.5,size))
     ax1.set_yticklabels(labels,fontsize=10)
