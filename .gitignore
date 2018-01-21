@@ -4,3 +4,6 @@ Documents/
 
 # Mac OS temp files
 .DS_Store
+
+# Others
+DSRCalculators.py
