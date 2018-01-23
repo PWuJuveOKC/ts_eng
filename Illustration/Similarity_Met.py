@@ -17,7 +17,7 @@ files_Prep = [f for f in files if f[0:8] == 'CM_prate'] #466
 files_Hum = [f for f in files if f[0:7] == 'CM_rhum'] #271
 files_Slp = [f for f in files if f[0:6] == 'CM_slp'] #271
 
-start, end = 0, 600
+start, end = 0, 1500
 
 AllFiles = [files_Air, files_Prep, files_Hum, files_Slp]
 
