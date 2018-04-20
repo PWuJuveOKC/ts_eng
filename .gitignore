@@ -1,9 +1,12 @@
 # Directory
 All_time_series_website/
 Documents/
+Data/
+Accuracy/
 
 # Mac OS temp files
 .DS_Store
 
 # Others
 DSRCalculators.py
+T
