@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="088a7dbf-a050-43bd-a7d7-c88cbea7f702" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/UCG/Classification_UCG.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/~$TSFresh_accuracy.xlsx" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UCI/Classification_UCI_ANN.py" afterPath="$PROJECT_DIR$/UCI/Classification_UCI_ANN.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +24,8 @@
       <file leaf-file-name="Classification_UCI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UCI/Classification_UCI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+            <state relative-caret-position="-105">
+              <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -34,13 +33,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Classification_UCI_ANN.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Sample_Extract.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Illustration/Sample_Extract.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Heatmap.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/UCI/Heatmap.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="17" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Classification_UCI_ANN.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UCI/Classification_UCI_ANN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1500">
-              <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="30" />
+            <state relative-caret-position="165">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
+                <marker date="1525819797000" expanded="true" signature="3803:3978" ph="..." />
               </folding>
             </state>
           </provider>
@@ -94,6 +116,7 @@
         <option value="$PROJECT_DIR$/sample_plot/sample_met.py" />
         <option value="$PROJECT_DIR$/UCI/Classification_UCI.py" />
         <option value="$PROJECT_DIR$/UCI/Classification_UCI_ANN.py" />
+        <option value="$PROJECT_DIR$/UCI/Heatmap.py" />
       </list>
     </option>
   </component>
@@ -104,6 +127,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-10" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="689" />
@@ -133,6 +157,21 @@
             <path>
               <item name="Feature_Engineering" type="b2602c69:ProjectViewProjectNode" />
               <item name="Feature_Engineering" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Feature_Engineering" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Feature_Engineering" type="462c0819:PsiDirectoryNode" />
+              <item name="Accuracy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Feature_Engineering" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Feature_Engineering" type="462c0819:PsiDirectoryNode" />
+              <item name="Data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Feature_Engineering" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Feature_Engineering" type="462c0819:PsiDirectoryNode" />
+              <item name="Illustration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Feature_Engineering" type="b2602c69:ProjectViewProjectNode" />
@@ -284,14 +323,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="689" extended-state="0" />
+    <frame x="-10" y="23" width="1280" height="689" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25282714" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26494345" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26262626" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32828283" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42929292" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290938" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4057239" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -346,13 +385,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Multi_classification/Med_Raw_Ada.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="52" column="19" lean-forward="true" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Multi_classification/Med_RF.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -396,13 +428,6 @@
     <entry file="file://$PROJECT_DIR$/Multi_classification/Med_TS_Raw_Ada.py" />
     <entry file="file://$PROJECT_DIR$/Multi_classification/Med_TS_Raw_MLP.py" />
     <entry file="file://$PROJECT_DIR$/Multi_classification/Med_TS_RF.py" />
-    <entry file="file://$PROJECT_DIR$/Illustration/Sample_Extract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-271">
-          <caret line="17" column="34" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="70" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Multi_classification/Med_Raw_Ada.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
@@ -568,29 +593,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/UCI/Classification_UCI_ANN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1525819797000" expanded="true" signature="3803:3978" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Multi_classification/Med_Ada.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
+        <state relative-caret-position="-85">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="61" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UCI/Classification_UCI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        <state relative-caret-position="-105">
+          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UCI/Classification_UCI_ANN.py">
+    <entry file="file://$PROJECT_DIR$/Illustration/Sample_Extract.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="30" />
+        <state relative-caret-position="187">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UCI/Heatmap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="17" selection-end-column="44" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
