@@ -6,8 +6,10 @@ Accuracy/
 sample_plot/
 Ref/
 
-# Mac OS temp files
+# Mac OS generated files
 .DS_Store
+.DS_Store?
+._*
 
 # Others
 DSRCalculators.py
