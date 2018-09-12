@@ -13,6 +13,7 @@ dat1 = dat.iloc[:,1:]
 dat1.index = dat.iloc[:,0]
 
 
-ax = sns.heatmap(dat1,vmin=0, vmax=1,yticklabels=False,cmap='RdYlGn',linewidths=0.01)
+ax = sns.heatmap(dat1,vmin=0, vmax=1,yticklabels=1,cmap='RdYlGn',linewidths=0.01)
+plt.yticks(rotation=45,fontsize=3)
 plt.tight_layout()
 plt.savefig('Accuracy/acc_heat.pdf',dpi=900)

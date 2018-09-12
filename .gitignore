@@ -3,10 +3,12 @@ All_time_series_website/
 Documents/
 Data/
 Accuracy/
+sample_plot/
+Ref/
 
 # Mac OS temp files
 .DS_Store
 
 # Others
 DSRCalculators.py
-T
+test.bib
